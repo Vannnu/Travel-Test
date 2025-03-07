@@ -27,10 +27,10 @@ docker exec -it laravel_app bash
 Inside the container, run:
 
 ```sh
-composer install
+php composer.phar install
 cp .env.example .env
 php artisan key:generate
-php artisan migrate --seed
+php artisan migrate db:seed
 ```
 
 ### 4. Install frontend dependencies
@@ -40,26 +40,12 @@ cd checkout-frontend
 npm install
 ```
 
-### 5. Start the frontend
-
-```sh
-docker exec -it nuxt_app bash -c "npm run dev"
-```
-
-The frontend will be accessible at `http://localhost:3000`.
-
 ## Running Tests
 
 To run backend tests:
 
 ```sh
 docker exec -it laravel_app bash -c "php artisan test"
-```
-
-To run frontend tests:
-
-```sh
-docker exec -it nuxt_app bash -c "npm run test"
 ```
 
 ## Linter & Fixer
