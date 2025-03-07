@@ -27,17 +27,11 @@ docker exec -it laravel_app bash
 Inside the container, run:
 
 ```sh
-php composer.phar install
 cp .env.example .env
+php composer.phar install
 php artisan key:generate
+php artisan migrate:fresh
 php artisan migrate db:seed
-```
-
-### 4. Install frontend dependencies
-
-```sh
-cd checkout-frontend
-npm install
 ```
 
 ## Running Tests
