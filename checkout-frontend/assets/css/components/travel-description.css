@@ -1,0 +1,55 @@
+.travel-description {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+h3.highlights-title {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #34495e;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.highlights-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-item .icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.difficulty {
+    font-weight: bold;
+    color: #e67e22;
+}

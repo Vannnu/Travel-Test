@@ -1,0 +1,11 @@
+.travel-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+}
+.price {
+    font-weight: bold;
+    color: green;
+}
+

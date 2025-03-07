@@ -1,0 +1,50 @@
+.moods {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.mood-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.mood-icon {
+    font-size: 32px;
+    color: #333;
+}
+
+.mood-progress {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-progress {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#007bff 0%, #ddd 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.percentage {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+}

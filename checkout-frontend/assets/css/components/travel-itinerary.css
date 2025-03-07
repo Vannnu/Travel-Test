@@ -1,0 +1,77 @@
+.travel-itinerary {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+}
+
+h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.itinerary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+}
+
+.day-box {
+    text-align: center;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 5px;
+}
+
+.day-description {
+    font-size: 14px;
+    color: #34495e;
+}
+
+.guide-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 15px auto 0;
+    border: 1px solid #ddd;
+}
+
+.guide-icon {
+    font-size: 40px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.guide-text {
+    font-size: 16px;
+    color: #34495e;
+}
