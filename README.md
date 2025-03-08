@@ -33,7 +33,11 @@ php artisan key:generate
 php artisan migrate:fresh
 php artisan migrate db:seed
 ```
-goto main page: https//localhost:3000
+
+## App
+
+[Go to app main page](https//localhost:3000)
+
 
 ## Running Tests
 
