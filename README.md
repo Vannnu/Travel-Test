@@ -31,12 +31,12 @@ cp .env.example .env
 php composer.phar install
 php artisan key:generate
 php artisan migrate:fresh
-php artisan migrate db:seed
+php artisan db:seed
 ```
 
 ## App
 
-[Go to app main page](https//localhost:3000)
+Go to app main page -> http://localhost:3000
 
 
 ## Running Tests
