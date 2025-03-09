@@ -2,6 +2,9 @@ version: '3.8'
 
 services:
   backend:
+    build:
+      context: ./checkout
+      dockerfile: Dockerfile
     image: php:8.2-fpm
     container_name: laravel_app
     working_dir: /var/www
@@ -18,8 +21,6 @@ services:
       - DB_DATABASE=checkout
       - DB_USERNAME=toro
       - DB_PASSWORD=seduto
-    command: bash -c "apt-get update && apt-get install -y git && docker-php-ext-install pdo_mysql && curl -sS https://getcomposer.org/installer | php && php composer.phar install && php-fpm"
-
   mysql:
     image: mysql:8.0
     container_name: mysql
