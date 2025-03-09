@@ -45,6 +45,11 @@ To run backend tests:
 
 ```sh
 docker exec -it laravel_app bash -c "php artisan test"
+
+This command will remove all the records in the DB. If you want 
+to use the app you have to run again the command:
+
+php artisan db:seed
 ```
 
 ## Linter & Fixer
